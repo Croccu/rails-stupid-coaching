@@ -1,0 +1,12 @@
+<div class="ask-container bg-light border-5 border-start px-3 p-start">
+  <h6><%= params[:question] %></h6>
+  <p class="fst-italic">-You</p>
+</div>
+
+<div class="answer-container alert-warning border-5 border-start border-warning px-3 p-start">
+  <h6><%= @answer %></h6>
+  <p class="fst-italic">-Your coach</p>
+</div>
+
+
+<%= link_to "Ask again!", ask_path, class:"text-decoration-none btn btn-secondary" %>
